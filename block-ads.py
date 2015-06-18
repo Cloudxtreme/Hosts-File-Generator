@@ -194,11 +194,12 @@ def generate_file(dirPaths):
         if response.status_code == 200:
             content = str(response.text)
 
-            # Some websites use 0.0.0.0 instead of 127.0.0.1, replace it
-            content = content.replace("0.0.0.0", "127.0.0.1")
+            # Some websites use 127.0.0.1 instead of 0.0.0.0
+            # which is faster to lookup, replace it
+            content = content.replace("127.0.0.1", "0.0.0.0")
 
             # Replace weird whitespace after ip addresses with one space
-            content = re_sub("(127.0.0.1)\\s{2,}|\\t{1,}", "\\1 ", content)
+            content = re_sub("(0.0.0.0)\\s{2,}|\\t{1,}", "\\1 ", content)
 
             # Find lines that end with a # and make them start on their own
             # lines
