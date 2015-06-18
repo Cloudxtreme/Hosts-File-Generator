@@ -22,7 +22,7 @@
 # THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 __author__ = "Forgotten Leaf"
-__copyright__ = "Copyright 2014, Forgotten Leaf"
+__copyright__ = "Copyright 2015, Forgotten Leaf"
 __license__ = "MIT"
 __version__ = "1.0.0"
 
