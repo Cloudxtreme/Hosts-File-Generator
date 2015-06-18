@@ -1,6 +1,8 @@
 Hosts-File-Generator
 ====================
 
+*NOTE: I just wrote this a long time ago for my own fun back when I was learning Python, I recommend using Steven Black's [hosts file consolidator](https://github.com/StevenBlack/hosts) instead, it's a much better work than what I have here.*
+
 Generates and merges a hosts file from a list of sources.
 
 
